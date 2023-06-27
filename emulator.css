@@ -143,6 +143,17 @@ hr {
     padding-bottom: 1em;
 }
 
+#beepertest {
+    border-radius: 5px;
+    background: var(--second-bg-color);
+    color: var(--second-txt-color);
+    padding: 0.25em;
+    min-width: 6em;
+    height: 2em;
+    display: inline-block;
+    cursor: pointer;
+}
+
 #romfile {
     padding-left: 0.5em;
     padding-bottom: 0.5em;
