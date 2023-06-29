@@ -23,10 +23,10 @@
 /// 523--C5  8
 
 /// waveform list:
-/// "sine"
-/// "square"
-/// "sawtooth"
-/// "triangle"
+/// 'sine'
+/// 'square'
+/// 'sawtooth'
+/// 'triangle'
 
 var audioCtx = new AudioContext();
 
@@ -46,7 +46,7 @@ function beeper(frequency, wave, duration) {
     oscillator.stop(audioCtx.currentTime + duration);
 }
 
-function beepnote(note, wave='sine', duration=0.5) {
+function play(note, wave='sine', duration=0.5) {
     if (note == 1) {
         beeper(262, wave, duration);
     }
@@ -88,18 +88,18 @@ function beepnote(note, wave='sine', duration=0.5) {
     }
 }
 
-function littlestar() {
-    ltss1();
+function littlestar(wave) {
+    ltss1(wave);
     setTimeout(function() {
-        ltss2();
+        ltss2(wave);
         setTimeout(function() {
-            ltss3();
+            ltss3(wave);
             setTimeout(function() {
-                ltss3();
+                ltss3(wave);
                 setTimeout(function() {
-                    ltss1();
+                    ltss1(wave);
                     setTimeout(function() {
-                        ltss2();
+                        ltss2(wave);
                     }, 3500);
                 }, 4500);
             }, 4000);
@@ -107,20 +107,20 @@ function littlestar() {
     }, 3500);
 }
 
-function ltss1() {
-    beeper(262, 'sine', 0.5);
+function ltss1(wave) {
+    play('1', wave, 0.5);
     setTimeout(function() {
-        beeper(262, 'sine', 0.5);
+        play('1', wave, 0.5);
         setTimeout(function() {
-            beeper(392, 'sine', 0.5);
+            play('5', wave, 0.5);
             setTimeout(function() {
-                beeper(392, 'sine', 0.5);
+                play('5', wave, 0.5);
                 setTimeout(function() {
-                    beeper(440, 'sine', 0.5);
+                    play('6', wave, 0.5);
                     setTimeout(function() {
-                        beeper(440, 'sine', 0.5);
+                        play('6', wave, 0.5);
                         setTimeout(function() {
-                            beeper(392, 'sine', 0.5);
+                            play('5', wave, 0.5);
                         }, 500);
                     }, 500);
                 }, 500);
@@ -129,21 +129,21 @@ function ltss1() {
     }, 500);
 }
 
-function ltss2() {
+function ltss2(wave) {
     setTimeout(function() {
-        beeper(349, 'sine', 0.5);
+        play('4', wave, 0.5);
         setTimeout(function() {
-            beeper(349, 'sine', 0.5);
+            play('4', wave, 0.5);
             setTimeout(function() {
-                beeper(330, 'sine', 0.5);
+                play('3', wave, 0.5);
                 setTimeout(function() {
-                    beeper(330, 'sine', 0.5);
+                    play('3', wave, 0.5);
                     setTimeout(function() {
-                        beeper(294, 'sine', 0.5);
+                        play('2', wave, 0.5);
                         setTimeout(function() {
-                            beeper(294, 'sine', 0.5);
+                            play('2', wave, 0.5);
                             setTimeout(function() {
-                                beeper(262, 'sine', 0.5);
+                                play('1', wave, 0.5);
                             }, 500);
                         }, 500);                                            
                     }, 500);
@@ -153,21 +153,21 @@ function ltss2() {
     }, 500);
 }
 
-function ltss3() {
+function ltss3(wave) {
     setTimeout(function() {
-        beeper(392, 'sine', 0.5);
+        play('5', wave, 0.5);
         setTimeout(function() {
-            beeper(392, 'sine', 0.5);
+            play('5', wave, 0.5);
             setTimeout(function() {
-                beeper(349, 'sine', 0.5);
+                play('4', wave, 0.5);
                 setTimeout(function() {
-                    beeper(349, 'sine', 0.5);
+                    play('4', wave, 0.5);
                     setTimeout(function() {
-                        beeper(330, 'sine', 0.5);
+                        play('3', wave, 0.5);
                         setTimeout(function() {
-                            beeper(330, 'sine', 0.5);
+                            play('3', wave, 0.5);
                             setTimeout(function() {
-                                beeper(294, 'sine', 0.5);
+                                play('2', wave, 0.5);
                             }, 500);
                         }, 500);
                     }, 500);
