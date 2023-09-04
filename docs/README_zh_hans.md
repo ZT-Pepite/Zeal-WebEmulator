@@ -6,7 +6,7 @@
     */
     Version: 0.0.1,
     Author: Zeal 8-bit Computer
-    Translator: JasonMo
+    Translator: JasonMo, ZT-Pepite
     Last modified: 2023/07/21 8:16,
     Last commit: "Project: Reconstitution, delete useless files",
 -->
@@ -23,39 +23,37 @@
     <a href="../README.md">English</a> | 简体中文
 </p>
 
-该项目是Zeal 8位计算机的软件模拟器（Zeal 8位计算机是基于Z80 CPU的自制8位计算机）。
+本项目旨在创建Zeal 8位计算机的软件模拟器（Zeal 8位计算机是一台自制的8位计算机，基于Z80 CPU）。
 
-[点击这里访问在线版模拟器](https://zeal8bit.github.io/Zeal-WebEmulator/)
+**[点击此处访问在线版模拟器](https://zeal8bit.github.io/Zeal-WebEmulator/)**
 
-## 这个项目的用意在何处？
+## 目的是什么？
 
-该项目的目标是实现与真实机器完全相同的模拟器，以便能够直接从主机执行并**调试**为Zeal 8位计算机编写的程序，而无需手动写入任何EEPROM或NOR闪存。这使得开发和测试周期更加便捷。
+该项目的目标是实现与真实机器完全相同的模拟，以便可以直接在主机上执行并调试为Zeal 8位计算机编写的程序，而无需手动写入任何EEPROM或NOR闪存。这有助于简化开发和测试流程。
 
-## 为什么将它做成一个网页模拟器？（HTML/CSS/JavaScript）
+## 为什么选择创建一个网页模拟器？（使用HTML/CSS/JavaScript）
 
-主要目标是将此模拟器集成为 [zeal8bit.com](https://zeal8bit.com)的一部分。因此，选择HTML/CSS和Javascript在这方面优势明显。
+主要目标是将此模拟器集成为 [zeal8bit.com](https://zeal8bit.com)网站中。因此，选择HTML/CSS和Javascript在这方面优势明显。
 
-另一方面，该项目的另一个目标是让任何人在任何平台（Linux / Windows / Mac OS X）上为Zeal 8位计算机测试或编写程序，而无需安装工具链。
+另一方面，还可以让任何人在任何平台（Linux / Windows / Mac OS X）上为Zeal 8位计算机测试或编写程序，而无需安装工具链。
 
-该模拟器已在Opera，Google Chrome和Microsoft Edge上进行了测试。
+模拟器已在Opera，Google Chrome和Microsoft Edge上进行了测试。
 
 ## 性能如何？
 
-模拟器比实际硬件慢，即使实际硬件使用的是运行频率为 10MHz 的 Z80。这是由于Javascript本身和Web浏览器本身的开销。但正如我上面所说，它的主要功能是**调试**程序，为此，毫无疑问它是合格的。
+模拟器比实际硬件慢，即使实际硬件使用的是运行频率为 10MHz 的 Z80。这是由于Javascript本身和Web浏览器本身的开销。然而，正如前面提到的，它的主要功能是调试程序，从这个角度来看，它表现得相当不错。
 
-此外，模拟器在时间方面并不准确，更多详细信息如下，在*功能*部分中。
+此外，模拟器在时间方面并不是完全准确的，更多详细信息可以在“功能”部分找到。
 
-用 **C语言** （w/ SDL） 编写原生仿真器将会更快，这在计时方面会更准确。但是，这需要一些时间投入。如果您对此类项目感兴趣，请随时与我联系或做出贡献。
+用 **C语言** （w/ SDL） 编写原生仿真器将会更快，这在计时方面会更准确。但是，这需要一些时间投入。如果您对此类项目感兴趣，请随时与我联系或提供贡献。
 
 ## 如何使用模拟器？
+有几种使用模拟器的方法：
+* 使用模拟器的实时版本：[实时版本的模拟器](https://zeal8bit.github.io/Zeal-WebEmulator/)。您无需安装任何其他东西就可以使用模拟器。
+* 克隆这个存储库，并使用网络浏览器打开 `index.html`（首选 Google Chrome 或 Opera）。
+* 使用 Electron 从此存储库创建一个应用程序。更多详细信息可以在下面找到。
 
-为您提供了几种选择：
-
-* 使用模拟器的实时版本：[模拟器的实时版本](https://zeal8bit.github.io/Zeal-WebEmulator/)。您将使用模拟器而无需安装任何其他东西。
-* 克隆此存储库并使用网络浏览器打开 `index.html`（首选 Google Chrome 或 Opera）。
-* 使用 electron 从此存储库创建一个应用程序。更多详情如下。
-
-### 如何使用electron？
+### 如何使用Electron？
 
 #### 安装依赖项
 
@@ -123,7 +121,7 @@ yarn dist-win64
 
 ## 目前支持的功能
 
-目前，模拟了Zeal 8位计算机的以下功能：
+目前，该模拟器实现了Zeal 8位计算机的以下功能：
 
 * Z80 CPU（[感谢*Molly Howell*](https://github.com/DrGoldfire/Z80.js)）
 * Z80 PIO：支持所有模式，包括端口 A 和 B。实现了独立于连接的设备。
@@ -161,9 +159,9 @@ yarn dist-win64
 
 ## 为项目做出贡献
 
-任何人都可以为这个项目做出贡献，欢迎贡献者们！
+欢迎贡献者们！任何人都可以为这个项目做出贡献。
 
-按您的意愿修复您遇到的任何错误，实现待办列表中存在的任何功能或您认为有用或重要的新功能。
+您可以按照您的意愿修复任何错误，也可以实现待办列表中的功能，或您认为有用或重要的新功能。
 
 贡献流程：
 
