@@ -31,9 +31,9 @@
 
 **👏中文介绍———Zeal 8位计算机软件模拟器创建和使用指南👏**
 - **[点击此处访问在线模拟器](https://zeal8bit.github.io/Zeal-WebEmulator/)**
-- [Zeal 8位计算机]([url](https://zeal8bit.com/))是一台自制的8位计算机，基于Z80 CPU。
-- Zeal 8位计算机的[B站频道]([url](https://space.bilibili.com/1042658991))
-- [购买 Zeal 8位计算机]([url](https://www.tindie.com/products/zeal8bit/zeal-8-bit-computer-developer-edition-z80-based/))
+- [Zeal 8位计算机](https://zeal8bit.com/)是一台自制的8位计算机，基于Z80 CPU。
+- Zeal 8位计算机的[B站频道](https://space.bilibili.com/1042658991)
+- [购买 Zeal 8位计算机](https://www.tindie.com/products/zeal8bit/zeal-8-bit-computer-developer-edition-z80-based/)
 - 中国购买请联系`contact@zeal8bit.com`
   
 ## ✅模拟器的目的是什么？
