@@ -17,11 +17,17 @@
     <a href="https://opensource.org/licenses/Apache-2.0">
         <img src="https://img.shields.io/badge/License-Apache_2.0-blue.svg" alt="Licence" />
     </a>
+    <a href="https://github.com/ZT-Pepite/Zeal-WebEmulator/edit/patch-2/docs/README_zh_hans.md">
+  <img alt="bilibili" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fapi.swo.moe%2Fstats%2Fbilibili%2F1042658991&query=count&color=282c34&label=bilibili&labelColor=FE7398&logo=bilibili&logoColor=white&logoSvg=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB2aWV3Qm94PSIwIDAgNTIgNTIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI%2BPHBhdGggZD0iTTEuMzczNTIgMTcuMzUzMjJIOC4xMzUzMjNMMTcuMzUzMjIgMTYuNzUzMjF6IE0yLjEzNTMyIDMuMDAwMDJMMi4xMzUzMjIgMy4wMDAwMnoiLz48L3N2Zz4%3D)"/>
+</a>
+
 </p>
 
 <p align="center">
     <a href="../README.md">English</a> | 简体中文
 </p>
+
+
 
 **👏中文介绍———Zeal 8位计算机软件模拟器创建和使用指南👏**
 - **[点击此处访问在线模拟器](https://zeal8bit.github.io/Zeal-WebEmulator/)**
